@@ -1,0 +1,41 @@
+
+body {
+    background-color: black;
+     background-image: url("Images/StaticResize.png");
+     align-items: center;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+a {
+  
+}
+header {
+    text-align: center;
+    margin:auto;
+}
+.browse a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+    padding: 10px;
+    padding-left: 0;
+    font:bolder;
+}
+.browse li{
+    display: inline;
+}
+.browse div{
+    display: inline;
+}
+p {
+    color: white;
+}
+.sidebar {
+    margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,61 @@
+
+body {
+    background-color: black;
+     align-items: center;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+a {
+  
+}
+header {
+    text-align: center;
+    margin:auto;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.browse a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+    padding: 10px;
+    padding-left: 0;
+    font:bolder;
+}
+.browse li{
+    display: inline;
+}
+.browse div{
+    display: inline;
+}
+p {
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    margin:auto;
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+.sidebar {
+    margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
