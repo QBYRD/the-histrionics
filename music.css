@@ -71,6 +71,20 @@ h1{
 .ham {
     display: none;
 }
+h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.quotes{
+    justify-content: center;
+}
+.quotes li {
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
    @media screen and (max-width: 900px) {
       .browse {
           display: none;
