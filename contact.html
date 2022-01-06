@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="contact.css">
     </head>
     <body>
-        <header >
-            <ul class="browse">
+        <header>
+            <input type="image" src="Images/hamburger-menu.png" class="ham" id="ham">
+    </div>
+            <ul class="browse" id="browse">
             <li><a href="Histrionics.html">HOME</a></li>
             <li> <a href="about.html">ABOUT</a></li>
-           <li> <a href="videos.html">VIDEOS</a></li>
            <li> <a href="Contact.html">CONTACT</a></li>
            <li> <a href="HistMusicLinks.html">MUSIC</a></li>
+           <li> <a href="https://thehistrionicslouisville.bandcamp.com/merch" target="_blank" rel="noreferrer noopener">MERCH</a></li>
             </header>
            <div class="sidebar">
            <li> <a href="https://open.spotify.com/artist/7IyglAgo4u1RddvzqVY3VY?si=A_Bba2V_Rk2TDZdCRg-wfw&dl_branch=1">
@@ -19,7 +22,20 @@
             <img src="images/blacktunes.png" alt="itunes"></a></li>
             <li> <a href="https://www.youtube.com/channel/UCo3-UGZfP98hLgFV8DaEkuw/videos">
             <img src="Images/blackyt.jpg" alt="youtube"></a></li>
+           </div>
+        <h1>CONTACT US</h1>
+        <form id="contactus">
+            <div class="contact-form">
+            <input class="name" id="namebox" name="name" type="text" spellcheck="false" maxlength="30" data-title="First" placeholder="Example: John Doe">
+            <input class="name" id="email" name="email" type="text" spellcheck="false" maxlength="30" data-title="email" placeholder="example@example.com">
+          
+            <textarea columns="50" rows="10" placeholder="example: ive been watching you"  class="message" id="message"></textarea>
+
+            
         </div>
-        <form>
-            <input class="fname" name="fname" type="text" spellcheck="false" maxlength="30" data-title="First">
+
         </form>
+        <button id="submit">SUBMIT</button>
+    </div>
+    <script type="text/javascript" src="js/hist.js"></script>
+</body>

@@ -1,3 +1,4 @@
+
 body {
     background-color: black;
      align-items: center;
@@ -34,22 +35,91 @@ p {
 .sidebar {
     margin: 0;
   padding: 0;
-  width: 200px;
+  width: 10%;
+  background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
+  z-index: 1;
 }
-.fname {
+.sidebar li a {
+    width: 10%;
+}
+.sidebar li a:hover img{
+    transform:scale(1.5)
+}
+h1 {
+    text-emphasis: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    font-size: 40px;
+    margin:40px auto 20px auto;
+}
+.contact-form {
+    display: inline;
+    text-align: center;
+}
+
+.name { 
+    display: block;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     padding: 12px;
-    margin: 6px 0 4px;
-    border: 1px solid #ccc;
+    margin: 20px auto 20px auto;
+    border: 1px solid #000;
     background: #fafafa;
     color: #000;
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
     line-height: normal;
     box-sizing: border-box;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: none;
 }
+.contact-form :first-child {
+    margin: 30px auto 10px auto;
+}
+textarea{
+    display: block;
+    margin: 20px auto 10px auto;
+    width: 30%;
+}
+button{
+    display: block;
+    margin: 20px auto;
+}
+
+   @media (max-width: 900px) {
+      .browse {
+          display: none;
+      }
+      .browse.show{
+          display:block;
+      }
+      .browse.show li a{
+          display: block;
+          width: 100%;
+      }
+      .ham {
+        display:block;
+        max-width: 5%;
+        max-height: 5%;
+       }
+      .sidebar {
+          display: none;
+      }
+      li a img {
+          display: none;
+      }
+      .contact-form {
+          width: 80%;
+   }
+   }
+   
+
+   @media (min-width: 901px) {
+    .ham {
+        display: none;
+    }
+   }

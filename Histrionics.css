@@ -1,7 +1,6 @@
 
 body {
     background-color: black;
-     background-image: url("Images/StaticResize.png");
      align-items: center;
     background-repeat: no-repeat;
     background-position: top;
@@ -31,11 +30,57 @@ p {
     color: white;
 }
 .sidebar {
-    margin: 0;
+  margin: 0;
   padding: 0;
-  width: 200px;
+  width: 10%;
   background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
+  z-index: 1;
+}
+.sidebar li a {
+    width: 10%;
+}
+.sidebar li a:hover img{
+    transform: scale(1.5);
+}
+.static {
+    display:block;
+    width: 70%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ham {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    body{
+        background-image: none;
+    }
+    .static{
+
+    }
+   .browse {
+       display: none;
+   }
+   .browse.show{
+       display: block;
+   }
+   .browse.show li a {
+       display: block;
+       width: 100%;
+   }
+   .sidebar {
+       display: none;
+   }
+   .ham {
+    display:block;
+    max-width: 5%;
+    max-height: 5%;
+   }
+   li a img {
+       display: none;
+   }
 }
